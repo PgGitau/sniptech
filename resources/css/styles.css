@@ -32,6 +32,7 @@ html {
 main {
     /* border: 2px solid rgb(212, 10, 10); */
     margin-top: 85px;
+    background-color: black;
 }
 /* MAIN media queries */
 @media (min-width: 641px) {
@@ -289,7 +290,7 @@ main {
 .hero-container {
     /* border: 2px solid red; */
     background-color: black;
-    height: 400px;
+    height: 450px;
     color: whitesmoke;
     font-family: poppins, sans-serif;
 
@@ -428,6 +429,7 @@ main {
 .faq-container {
     /* border-bottom: 2px solid rgb(2, 2, 2); */
     /* margin-bottom: 1rem; */
+    background-color: whitesmoke;
     border-top: 2px solid rgb(10, 2, 48);
     padding-block: 2.5rem;
 }
