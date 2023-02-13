@@ -290,7 +290,9 @@ main {
 /* HERO SECTION */
 .hero-container {
     /* border: 2px solid red; */
-    background-color: black;
+    background-image: url("../images/banner-400px.webp");
+    background-position: center;
+    background-size: cover;
     height: 450px;
     color: whitesmoke;
     font-family: poppins, sans-serif;
@@ -360,6 +362,7 @@ main {
     .hero-container {
         /* border: 2px solid red; */
         height: 500px;
+        background-image: url("../images/banner-600p.webp");
     }
     .hero p {
         width: 80%;
@@ -398,6 +401,7 @@ main {
     .hero-container {
         /* border: 2px solid red; */
         height: 550px;
+        background-image: url("../images/banner-1200px.webp");
     }
     .hero h1 {
         font-size: 3.7rem;
