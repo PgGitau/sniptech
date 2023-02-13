@@ -50,25 +50,13 @@
     <!-- MAIN SECTION -->
     <main>
         <!-- HERO SECTION -->
-        <section class="wrapper-container">
-            <div class="wrapper">
-                <div class="static-text">We are</div>
-                
-                <div class="dynamic-text">
-                    <li><span>Sniptech</span></li>
-                    <li><span>Web Designers</span></li>
-                    <li><span>Web Developers</span></li>
-                </div>
-            </div>
-
-            <div class="wrapper-text">
-                <p>You can reach out to us if you need any help in making a website for you or your business</p>
-            </div>
-
-            <br>
-            
-            <div class="wrapper-btn">
-                <a href="">Contact Us</a>
+        <section class="hero-container">
+            <div class="hero">
+                <h1>We are <br><span class="auto-input"></span></h1>
+                <p>You and your business <span id="more-attention">need</span> our software solutions. We deliver <span id="less-attention">powerful websites</span> that fits
+                    you perfectly and brings <span id="less-attention">positive</span> user experience.
+                </p>
+                <a href="">Contact Us</a>  
             </div>
         </section>
 
@@ -142,5 +130,15 @@
         <p class="footer-text">&copy;Sniptech Inc, 2022 | All rights Reserved | Made with <span class="fa-solid fa-heart"></span> by <a href="https://github.com/pggitau" target="_blank">R3t3p</a></p>
     </footer>
         
+    <!-- typed effect -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Sniptech&#174;", "Web Designers",  "Web Developers"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+    </script>
 </body>
 </html>
