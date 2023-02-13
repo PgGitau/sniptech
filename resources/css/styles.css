@@ -285,159 +285,142 @@ main {
 
 
 
-/* HERO & WRAPPER SECTION */
-.wrapper-container {
+/* HERO SECTION */
+.hero-container {
     /* border: 2px solid red; */
+    background-color: black;
+    height: 400px;
+    color: whitesmoke;
+    font-family: poppins, sans-serif;
+
+    display: flex;
+    align-items: center;
+}
+.hero {
+    /* border: 2px solid red; */
+    padding: .5rem;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: .1rem;
+    /* line-height: 1.2rem; */
+    text-align: center;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-
-    background-color: black;
-    color: whitesmoke;
-    height: 400px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 2rem;
 }
-.wrapper {
-    display: inline-flex;
+.hero h1 {
+    font-size: 2rem;
+    line-height: 1.7rem;
 }
-.wrapper .static-text {
-    font-size: 17px;
-    font-weight: 600;
-}
-.wrapper .dynamic-text {
-    border: 2px solid rgb(0, 0, 0);
-    margin-left: 15px;
-    height: 29px;
-    /* line-height: 29px; */
-    overflow: hidden;
-}
-.dynamic-text li {
-    list-style-type: none;
-    /* border: 2px solid white; */
-    padding-block: .2px;
-    margin-block: 1px;
-
-    font-size: 19px;
-    font-weight: 500;
-    
-    position: relative;
-    top: -4px;
+.hero .auto-input {
     color: rgb(170, 255, 0);
-    animation: slide 6s steps(4) infinite;
 }
-@keyframes slide {
-    100% {
-        top: -110px;
-    }
-}
-.dynamic-text li span {
-    position: relative;
-}
-.dynamic-text li span::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    background-color: rgb(2, 2, 2);
-    border-left: 2px solid rgb(170, 255, 0);
-    animation: typing 1.5s steps(14) infinite;
-}
-@keyframes typing {
-    100% {
-        left: 100%;
-        margin: 0 -35px 0 35px;
-    }
-}
-
-.wrapper-text {
+.hero p {
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+    letter-spacing: .1rem;
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.wrapper-text p {
-    line-height: 16px;
-    font-size: 1.2rem;
+#more-attention {
+    font-style: italic;
+    color: rgb(170, 255, 0);
+    font-weight: bolder;
+    text-decoration: underline;
 }
-
-.wrapper-btn a {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+#less-attention {
+    font-style: italic;
+    color: rgb(170, 255, 0);
+}
+.hero a {
     text-decoration: none;
+    border: 2px solid black;
+    border-radius: .5rem;
     background-color: rgb(170, 255, 0);
-    padding: 5px 10px;
-    color: rgb(0, 0, 0);
+    padding: .3rem 3rem;
+    letter-spacing: .01rem;
+    color: black;
     font-weight: 600;
-    border-radius: 1rem;
+    font-size: 1.1rem;
+    transition: background-color 300ms ease-in-out,
+                border 300ms ease-in-out,
+                color 300ms ease-in-out;
+}
+.hero a:hover {
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(170, 255, 0);
+    color: rgb(170, 255, 0);
 }
 
-/* Avg size mobile media queries for wrapper  */
+/* Non-mobile media queries for primary navigation  */
 @media (min-width: 425px) {
-    .wrapper-text p {
+    .hero-container {
+        /* border: 2px solid red; */
+        height: 500px;
+    }
+    .hero p {
         width: 80%;
         margin: auto;
     }
-    .wrapper .static-text {
-        font-size: 30px;
+    .hero h1 {
+        font-size: 3rem;
+        line-height: 2.4rem;
     }
-    .wrapper .dynamic-text {
-        height: 39px;
-    }
-     .dynamic-text li {
-        padding-block: 3px;
-        margin-block: 3px;
-        font-size: 25px;        
-        top: -5px;
-    }
-    @keyframes slide {
-        100% {
-            top: -170px;
-        }
+    .hero .auto-input {
+        font-size: 3.1rem;
     }
 }
-
-
-/* Non-mobile media queries for wrapper  */
 @media (min-width: 641px) {
-    .wrapper-container {
-        height: 500px;
-    }
-    .wrapper .static-text {
-        font-size: 50px;
-    }
-
-    .wrapper .dynamic-text {
+    .hero {
         /* border: 2px solid red; */
-        height: 70px;
-        /* line-height: 90px; */
-        overflow: hidden;
+        gap: 3rem;
     }
-
-    .dynamic-text li {
-        padding-block: 2px;
-        margin-block: 2px;
-
-        font-size: 50px;
-        top: -3px;
+    .hero h1 {
+        font-size: 3.3rem;
+        line-height: 2.7rem;
     }
-
-    @keyframes slide {
-        100% {
-            top: -300px;
-        }
+    .hero .auto-input {
+        font-size: 3.5rem;
     }
-    .wrapper-text p {
-        line-height: 18px;
-        font-size: 1.5rem;
+    .hero p {
+        font-size: 1.7rem;
+        line-height: 1.5rem;
     }
-    .wrapper-btn a {
+    .hero a {
+        padding: .4rem 2rem;
         font-size: 1.2rem;
-        padding: 10px;
-        border-radius: 1.5rem;
-    }   
+    }
 }
-
+@media (min-width: 768px) {
+    .hero-container {
+        /* border: 2px solid red; */
+        height: 550px;
+    }
+    .hero h1 {
+        font-size: 3.7rem;
+        line-height: 3rem;
+    }
+    .hero .auto-input {
+        font-size: 4rem;
+    }
+    .hero p {
+        width: 60%;
+    }
+    .hero a {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+}
+@media (min-width: 900px) {
+    .hero h1 {
+        font-size: 4rem;
+        line-height: 3.3rem;
+    }
+    .hero .auto-input {
+        font-size: 4.4rem;
+    }
+}
 
 
 
