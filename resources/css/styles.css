@@ -1,11 +1,13 @@
 html {
     scroll-behavior: smooth;
-  }
+}
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
+}
+body {
+    background-color: black;
 }
 /*to minimise transition when resizing screen [its not really necessary]*/
 .resize-animation-stopper * {
@@ -32,7 +34,6 @@ html {
 main {
     /* border: 2px solid rgb(212, 10, 10); */
     margin-top: 85px;
-    background-color: black;
 }
 /* MAIN media queries */
 @media (min-width: 641px) {
