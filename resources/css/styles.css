@@ -312,7 +312,7 @@ main {
     position: absolute;
     background-color: rgb(0, 0, 0);
     z-index: -1;
-    opacity: .8;
+    opacity: .7;
 }
 .hero {
     /* border: 2px solid red; */
@@ -563,6 +563,155 @@ main {
     }
 }
 
+
+/* WHY-US SECTION */
+.whyus-container {
+    background-color: #0c1821;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 1rem;
+    /* border: 2px solid blueviolet; */
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+.whyus-main {
+    /* border: 2px solid #DAD6D6; */
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;   
+}
+.whyus-hero {
+    /* border: 2px solid #dad6d681; */
+    /* border-bottom: 0; */
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    height: 220px;
+
+    background-image: url("../images/why-us2.webp");    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* position: relative;
+    z-index: 1; */
+}
+.whyus-content {
+    /* border: 2px solid rgb(0, 0, 0); */
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    height: 220px;
+    background-color: #F7FF58;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+.whyus-content ul {
+    line-height: 1.1rem;
+}
+.whyus-content li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* border: 2px solid black; */
+    padding-left: 1rem;
+    list-style-position: inside;
+    text-align: left;
+}
+.whyus-content a {
+    /* border: 2px solid red; */
+    padding: .5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-weight: bold;
+
+    background-color: #000000;
+    border: 2px solid #000000;
+    color: #DAD6D6;
+    transition: background-color 400ms ease-in-out,
+                border 400ms ease-in-out,
+                color 400ms ease-in-out;
+}
+.whyus-content a:hover {
+    border: 2px solid #0c1821;
+    background-color: #DAD6D6;
+    color: #0c1821;
+}
+
+/* media queries why-us section */
+@media (min-width: 320px) {
+    .whyus-content h1 {
+        font-size: 2rem;
+    }
+}
+@media (min-width: 768px) {
+    .whyus-container {
+        justify-content: center;
+        height: 400px;
+    }
+    .whyus-content ul {
+        line-height: 1.5rem;
+    }
+    .whyus-main {
+        flex-direction: row;
+    }
+    .whyus-hero, .whyus-content {
+        height: 300px;
+        width: 100%;
+    }
+    .whyus-hero {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1rem;
+        /* border-right: 0; */
+        /* border-bottom: 2px solid #dad6d681; */
+    }
+    .whyus-hero::after {
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .whyus-content {
+        /* border: 2px solid #DAD6D6; */
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+        gap: 3rem;
+        padding-block: 1rem;
+    }
+    .whyus-content h1 {
+        font-size: 2.5rem;
+    }
+    .whyus-content li {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* PORTFOLIO SECTION */
+.portfolio-container {
+    /* border: 2px solid #0c1821; */
+    /* background-color: #0157ec; */
+    background-color: #DAD6D6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 500px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+/* .portfolio-header {
+    border: 2px solid red;
+} */
+.portfolio-list {
+    /* border: 2px solid green; */
+    height: 300px;
+}
+
 /* FAQ SECTION */
 .faq-container {
     /* border: 2px solid red; */
@@ -627,7 +776,7 @@ main {
     font-size: 1rem;
 }
 .accordion-content {
-    background-color: white;
+    background-color: #DAD6D6;
     line-height: 1.6;
     font-size: .9rem;
     display: none;
@@ -742,7 +891,7 @@ footer {
 }
 .footer-text {
     /* border: 2px solid rgb(255, 217, 0); */
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
     /* padding-block: .5rem; */
     text-align: center;
